@@ -21,17 +21,28 @@ docker run -d --name <nombre contenedor> --mount type=bind,source=<ruta carpeta 
 ### ¿Qué sucede al ingresar al servidor de nginx?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
 
+<img width="1895" height="931" alt="image" src="https://github.com/user-attachments/assets/bd847ce8-feda-4cb3-94ff-49f6ae960f35" />
+Al tratar de acceder desde el navegador no se encuentra la página web. Aparece el error 403 Forbidden.
 ### ¿Qué pasa con el archivo index.html del contenedor?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
+<img width="1754" height="396" alt="image" src="https://github.com/user-attachments/assets/459655c1-eadd-458b-8934-91f46171de8e" />
+
+Ahora ya no aparece el documento index.html en el contenedor.
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de tu computador en la carpeta html
 ### ¿Qué sucede al ingresar al servidor de nginx?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+<img width="1908" height="967" alt="image" src="https://github.com/user-attachments/assets/f5ee3696-a44e-44d8-afb4-8b2185e420d2" />
+
+Ahora al acceder desde el navegador aparece el template de pagina descargada y descomprimida en la ruta del bind mount.
 
 ### Eliminar el contenedor
 # COMPLETAR CON EL COMANDO
 
+<img width="531" height="78" alt="image" src="https://github.com/user-attachments/assets/ce916621-678a-48ca-84dd-d52493d10f95" />
+
 ### ¿Qué sucede al crear nuevamente un contenedor montado al directorio definidos anteriormente?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
-
+Al volver a crear el contenedor y acceder desde el navegador, se puede observar que el template de la pagina web sigue persistiendo por lo que la seguimos viendo sin tener que volver a hacer el proceso de descargar y descomprimir. Esto nos indica que la información del bind mount persiste en nuestro computador en la ruta definida, y no depende de la vida del contenedor.
 
