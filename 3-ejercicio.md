@@ -33,7 +33,7 @@ Ruta carpeta host: .../ejercicio3/www
 ### Crear un contenedor con la imagen wordpress en la red net-wp, configurar las variables de entorno WORDPRESS_DB_HOST, WORDPRESS_DB_USER, WORDPRESS_DB_PASSWORD y WORDPRESS_DB_NAME (los valores de estas variables corresponden a los del contenedor creado previamente)
 # COMPLETAR CON EL COMANDO
 
-docker run --name wordpress --network net-wp -p 3000:80 -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=admin -e WORDPRESS_PASSWORD=admin -e WORDPRESS_DB_NAME=wordpress -v C:\volumenes\ejercicio3\www:/var/www/html -d wordpress
+docker run --name wordpress --network net-wp -p 9500:80 -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=admin -e WORDPRESS_PASSWORD=admin -e WORDPRESS_DB_NAME=wordpress -v C:\volumenes\ejercicio3\www:/var/www/html -d wordpress
 
 ### Personalizar la apariencia de wordpress y agregar una entrada
 
